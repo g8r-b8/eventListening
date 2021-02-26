@@ -7,16 +7,16 @@ function startup() {
     console.log(el+" mouse enter!!!")
   }, false);
   el.addEventListener("touchstart", e=>{
-    console.log(el)
+    console.log("touchstart!!!")
   }, false);
   el.addEventListener("touchend", e=>{
-    console.log(el)
+    console.log("touchend!!!")
   }, false);
   el.addEventListener("touchcancel", e=>{
-    console.log(el)
+    console.log("touchcancel!!!")
   }, false);
   el.addEventListener("touchmove", e=>{
-    console.log(el)
+    console.log("touchmove!!!")
   }, false);
 }
 
