@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delta Demo</title>
+</head>
+<body>
+    <!--<script src="listeners.js"></script>-->
+ <script>
+    function startup() {
+      var el = document.getElementById("canvas");
+      el.addEventListener("click", e=>{
+        console.log(el+" click!!!")
+      }, false);
+      el.addEventListener("clickDown", e=>{
+        console.log(el+" clickDown!!!")
+      }, false);
+      el.addEventListener("clickUp", e=>{
+        console.log(el+"clickUp!!!")
+      }, false);
+
+
+    document.addEventListener("DOMContentLoaded", startup);
+
+</script>     
+    
+    <div id="canvas" width="600" height="600" style="border:solid black 1px;">
+        This definitely isn't phishing ;) .
+    </div>
+</body>
+</html>
