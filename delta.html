@@ -17,10 +17,14 @@
       }, false);
       */
       el.addEventListener("mousedown", e=>{
-        console.log(el)
+        var d = new Date();
+        var n = d.getTime();
+        console.log("down: "+n)
       }, false);
       el.addEventListener("mouseup", e=>{
-        console.log(el)
+        var d = new Date();
+        var n = d.getTime();
+        console.log("up: "+n)
       }, false);
 
     }
